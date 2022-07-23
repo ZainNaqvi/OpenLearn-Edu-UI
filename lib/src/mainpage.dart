@@ -29,7 +29,7 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: _pages[selectedPage],
       bottomNavigationBar: BottomNavigationBar(
-          selectedIconTheme: IconThemeData(color: Colors.purple),
+          selectedIconTheme: IconThemeData(color: Color(0xff5B73D0)),
           unselectedIconTheme:
               IconThemeData(color: Colors.grey.withOpacity(0.2)),
           showSelectedLabels: false,
@@ -40,19 +40,31 @@ class _MainPageState extends State<MainPage> {
           currentIndex: selectedPage,
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset("assets/icons/home.svg"),
+              icon: SvgPicture.asset(
+                "assets/icons/home.svg",
+                color: selectedPage == 0 ? Color(0xff5B73D0) : Colors.grey,
+              ),
               label: "",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.archive_outlined),
+              icon: SvgPicture.asset(
+                "assets/icons/letter.svg",
+                color: selectedPage == 1 ? Color(0xff5B73D0) : Colors.grey,
+              ),
               label: "",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart_outlined),
+              icon: SvgPicture.asset(
+                "assets/icons/message.svg",
+                color: selectedPage == 2 ? Color(0xff5B73D0) : Colors.grey,
+              ),
               label: "",
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.person_outline_outlined),
+              icon: SvgPicture.asset(
+                "assets/icons/person.svg",
+                color: selectedPage == 3 ? Color(0xff5B73D0) : Colors.grey,
+              ),
               label: "",
             ),
           ]),
