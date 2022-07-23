@@ -1,3 +1,4 @@
+import 'package:app_example_openlearn_app/src/mainpage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -24,23 +25,22 @@ class _SplashScreenState extends State<SplashScreen>
           ..forward();
     animation = CurvedAnimation(parent: _controller, curve: Curves.linear);
     Future.delayed(
-      Duration(seconds: 4),
-      () => Get.toNamed(AppRoutes.initial),
+      Duration(seconds: 3),
+      () => Get.to(MainPage()),
     );
   }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: Colors.white,
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         ScaleTransition(
           scale: animation,
           child: Center(
             child: Image.asset(
-              "assets/images/splash_1.png",
+              "assets/images/splash_1.jpg",
               width: double.maxFinite,
-              height: 150.h,
+              height: 250.h,
             ),
           ),
         ),
