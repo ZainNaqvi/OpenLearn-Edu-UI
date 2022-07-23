@@ -31,13 +31,7 @@ class HomePage extends StatelessWidget {
             ),
             SizedBox(height: 15.h),
             Container(
-                decoration: BoxDecoration(boxShadow: [
-                  BoxShadow(
-                    offset: Offset(2, 10),
-                    blurRadius: 1,
-                    color: Colors.grey.withOpacity(0.2),
-                  )
-                ]),
+                
                 child: TextField(
                   decoration: InputDecoration(
                     enabledBorder: outlinedBorder(),
