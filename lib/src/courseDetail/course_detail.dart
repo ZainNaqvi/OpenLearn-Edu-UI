@@ -49,14 +49,15 @@ class CourseDetail extends StatelessWidget {
 
               //Container info
               Container(
-                margin: EdgeInsets.only(top: 24.h, bottom: 18.h),
+                margin: EdgeInsets.only(top: 4.h, bottom: 12.h),
                 padding: EdgeInsets.only(
-                  left: 14.w,
-                  top: 14.h,
-                  right: 14.w,
+                  left: 0.w,
+                  top: 0.h,
+                  right: 0.w,
+                
                 ),
                 width: 386.w,
-                height: 94.h,
+            
                 decoration: BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(
@@ -119,7 +120,9 @@ class CourseDetail extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 14.h, right: 14.w),
+                margin: EdgeInsets.only(
+                  top: 14.h,
+                ),
                 width: 360.w,
                 height: 50.h,
                 decoration: BoxDecoration(
@@ -155,20 +158,25 @@ class CourseDetail extends StatelessWidget {
                         ),
                       ],
                     ),
-                    Text(
-                      "Reviews (453)",
-                      style: TextStyle(
-                        color: Color(0xff999BA4),
-                        fontWeight: FontWeight.w500,
-                        fontSize: 12.sp,
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          "Reviews (453)",
+                          style: TextStyle(
+                            color: Color(0xff999BA4),
+                            fontWeight: FontWeight.w500,
+                            fontSize: 12.sp,
+                          ),
+                        ),
+                        SizedBox(width: 8.w),
+                      ],
                     ),
                   ],
                 ),
               ),
               Container(
                 padding: EdgeInsets.all(14.r),
-                margin: EdgeInsets.only(top: 14.h, right: 14.w),
+                margin: EdgeInsets.only(top: 24.h, right: 14.w),
                 width: 360.w,
                 height: 50.h,
                 decoration: BoxDecoration(
@@ -181,6 +189,7 @@ class CourseDetail extends StatelessWidget {
                     Row(
                       children: [
                         SvgPicture.asset("assets/icons/audio_player.svg"),
+                        SizedBox(width: 8.w),
                         Text(
                           "01. Introduction",
                           style: TextStyle(

@@ -1,6 +1,7 @@
 import 'package:app_example_openlearn_app/src/courseDetail/course_detail.dart';
 import 'package:app_example_openlearn_app/src/favoritecourse/favourite_course.dart';
 import 'package:app_example_openlearn_app/src/home_page/home_page.dart';
+import 'package:app_example_openlearn_app/src/mainpage.dart';
 import 'package:app_example_openlearn_app/src/splash_page/splash_screen.dart';
 import 'package:get/get.dart';
 
@@ -29,7 +30,7 @@ class AppRoutes {
     ),
     GetPage(
       name: initial,
-      page: () => HomePage(),
+      page: () => MainPage(),
       transition: Transition.leftToRightWithFade,
     ),
     GetPage(

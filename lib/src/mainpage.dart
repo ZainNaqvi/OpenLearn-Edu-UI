@@ -1,4 +1,5 @@
 import 'package:app_example_openlearn_app/src/home_page/home_page.dart';
+import 'package:app_example_openlearn_app/src/message/message.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -14,7 +15,7 @@ class _MainPageState extends State<MainPage> {
   var selectedPage = 0;
   final List _pages = [
     HomePage(),
-    Container(child: Text("Home")),
+MessageScreen(),
     Container(child: Text("Home")),
     Container(child: Text("Home")),
   ];
