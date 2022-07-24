@@ -282,7 +282,7 @@ AppBar getAppbar() {
     backgroundColor: Colors.transparent,
     centerTitle: true,
     title: Text(
-      "Course Details",
+      "Detail Mentor",
       style: TextStyle(
         fontWeight: FontWeight.w600,
         fontSize: 16.sp,
