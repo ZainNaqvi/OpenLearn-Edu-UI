@@ -1,3 +1,5 @@
+import 'package:app_example_openlearn_app/routes.dart';
+import 'package:app_example_openlearn_app/src/courseDetail/course_detail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -55,13 +57,25 @@ class FavoriteCoursePage extends StatelessWidget {
                   child: Column(
                     children: List.generate(
                       favorite.length,
-                      (index) => CourseCard(
-                        tag: favorite[index]['tag'],
-                        members: favorite[index]['members'],
-                        price: favorite[index]['price'],
-                        star: favorite[index]['star'],
-                        title: favorite[index]['title'],
-                        type: favorite[index]['type'],
+                      (index) => GestureDetector(
+                        onTap: () {
+                          Get.toNamed(
+                            AppRoutes.getCourseDetail(
+                              title: favorite[index]['title'],
+                              tag: favorite[index]['tag'],
+                              price: favorite[index]['price'],
+                              type: favorite[index]['type'],
+                            ),
+                          );
+                        },
+                        child: CourseCard(
+                          tag: favorite[index]['tag'],
+                          members: favorite[index]['members'],
+                          price: favorite[index]['price'],
+                          star: favorite[index]['star'],
+                          title: favorite[index]['title'],
+                          type: favorite[index]['type'],
+                        ),
                       ),
                     ),
                   ),
