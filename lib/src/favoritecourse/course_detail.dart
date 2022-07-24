@@ -160,7 +160,7 @@ class FavoriteCoursePage extends StatelessWidget {
         ),
         Positioned(
             bottom: 120.h,
-            right: 42.w,
+            right: 32.w,
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 12.w),
               height: 24.h,
