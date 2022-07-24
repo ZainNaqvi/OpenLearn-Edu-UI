@@ -42,28 +42,32 @@ class _MainPageState extends State<MainPage> {
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
                 "assets/icons/home.svg",
-                color: selectedPage == 0 ? Color(0xff5B73D0) : Colors.grey,
+                color:
+                    selectedPage == 0 ? Color(0xff5B73D0) : Color(0xffC2C2C2),
               ),
               label: "",
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
                 "assets/icons/letter.svg",
-                color: selectedPage == 1 ? Color(0xff5B73D0) : Colors.grey,
+                color:
+                    selectedPage == 1 ? Color(0xff5B73D0) : Color(0xffC2C2C2),
               ),
               label: "",
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
                 "assets/icons/message.svg",
-                color: selectedPage == 2 ? Color(0xff5B73D0) : Colors.grey,
+                color:
+                    selectedPage == 2 ? Color(0xff5B73D0) : Color(0xffC2C2C2),
               ),
               label: "",
             ),
             BottomNavigationBarItem(
               icon: SvgPicture.asset(
                 "assets/icons/person.svg",
-                color: selectedPage == 3 ? Color(0xff5B73D0) : Colors.grey,
+                color:
+                    selectedPage == 3 ? Color(0xff5B73D0) : Color(0xffC2C2C2),
               ),
               label: "",
             ),

@@ -16,6 +16,7 @@ Container categoryCart(
     child: Row(
       children: [
         Container(
+          padding: EdgeInsets.all(8.r),
           width: 40.w,
           height: 40.h,
           decoration: BoxDecoration(
