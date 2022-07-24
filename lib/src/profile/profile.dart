@@ -12,6 +12,12 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    List list = [
+      "Eastern Dance Champion",
+      "Florida Dance Champion",
+      "Alabama Dance Champion",
+      "Paris Dance Champion",
+    ];
     return Scaffold(
       backgroundColor: Color(0xffF2F2F2),
       appBar: getAppbar(),
@@ -206,7 +212,7 @@ class Profile extends StatelessWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: List.generate(
-                        4,
+                        list.length,
                         (index) => Container(
                           margin: EdgeInsets.only(
                               left: 12.w, right: 12.w, top: 28.h, bottom: 0),
@@ -214,7 +220,7 @@ class Profile extends StatelessWidget {
                             children: [
                               MyBullet(),
                               SizedBox(width: 12.w),
-                              Text("Eastern Dance Champion"),
+                              Text(list[index]),
                             ],
                           ),
                         ),
